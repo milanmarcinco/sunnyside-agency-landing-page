@@ -1,0 +1,143 @@
+.wrapper {
+  width: 100%;
+  max-width: var(--max-content-width);
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: start;
+}
+
+.content {
+  padding: 20px 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+
+  h2 {
+    font-size: 32px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    color: var(--desaturated-blue);
+
+    user-select: none;
+  }
+
+  p {
+    line-height: 1.5;
+    color: var(--darker-grayish-blue);
+
+    user-select: none;
+  }
+
+  a {
+    font-size: 14px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    color: var(--desaturated-blue);
+
+    cursor: pointer;
+
+    &.underline {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        z-index: -1;
+        top: calc(100% - 8px);
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: calc(100% + 12px);
+        height: 8px;
+
+        opacity: 0.2;
+        border-radius: 9999px;
+        transition: 200ms all ease;
+      }
+
+      &:hover::after {
+        opacity: 1;
+      }
+
+      &Yellow::after {
+        background-color: var(--yellow);
+      }
+
+      &Red::after {
+        background-color: var(--soft-red);
+      }
+
+      &Cyan::after {
+        background-color: var(--moderate-cyan);
+      }
+
+      &Blue::after {
+        background-color: var(--dark-blue);
+      }
+    }
+  }
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.fs0 {
+  font-size: 0;
+}
+
+@media (max-width: 868px) {
+  .content {
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    padding: 60px 30px;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    a {
+      text-align: center;
+    }
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}

@@ -1,0 +1,33 @@
+.wrapper {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+.desktopContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  img {
+    transition: 1s all ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.mobileContainer {
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+  .desktopContainer {
+    display: none;
+  }
+
+  .mobileContainer {
+    display: grid;
+  }
+}

@@ -1,0 +1,82 @@
+.wrapper {
+  width: 100%;
+  max-width: var(--max-content-width);
+  padding: 100px 30px;
+  margin: 0 auto;
+
+  user-select: none;
+}
+
+.heading {
+  font-family: "Fraunces";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+.container {
+  margin-top: 80px;
+
+  display: flex;
+  gap: 80px 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonialItem {
+  display: flex;
+  flex: 1 1 300px;
+  max-width: 350px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picture {
+  border-radius: 9999px;
+}
+
+.body {
+  margin-top: 50px;
+
+  line-height: 1.5;
+  text-align: center;
+  color: var(--dark-grayish-blue);
+}
+
+.name {
+  margin-top: 50px;
+
+  font-family: "Fraunces";
+  font-weight: 900;
+  text-align: center;
+  color: var(--desaturated-blue);
+}
+
+.position {
+  margin-top: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+@media (max-width: 1039px) {
+  .wrapper {
+    padding: 80px 40px;
+  }
+
+  .container {
+    gap: 80px 30px;
+  }
+
+  .body {
+    margin-top: 30px;
+  }
+
+  .name {
+    margin-top: 30px;
+  }
+}
