@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: var(--light-cyan);
+  background-color: var(--theme-cyan);
 }
 
 .container {
@@ -23,7 +23,7 @@
   }
 
   a {
-    color: var(--moderate-cyan);
+    color: var(--theme-cyan-darker);
 
     cursor: pointer;
     transition: 100ms all ease;

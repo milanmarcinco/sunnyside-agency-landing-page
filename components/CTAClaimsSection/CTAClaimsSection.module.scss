@@ -29,14 +29,14 @@
     font-size: 32px;
     font-family: "Fraunces";
     font-weight: 900;
-    color: var(--desaturated-blue);
+    color: var(--almost-black);
 
     user-select: none;
   }
 
   p {
     line-height: 1.5;
-    color: var(--darker-grayish-blue);
+    color: var(--gray-dark);
 
     user-select: none;
   }
@@ -45,7 +45,7 @@
     font-size: 14px;
     font-family: "Fraunces";
     font-weight: 900;
-    color: var(--desaturated-blue);
+    color: var(--almost-black);
 
     cursor: pointer;
 
@@ -75,19 +75,19 @@
       }
 
       &Yellow::after {
-        background-color: var(--yellow);
+        background-color: var(--theme-yellow);
       }
 
       &Red::after {
-        background-color: var(--soft-red);
+        background-color: var(--theme-red);
       }
 
       &Cyan::after {
-        background-color: var(--moderate-cyan);
+        background-color: var(--theme-cyan);
       }
 
       &Blue::after {
-        background-color: var(--dark-blue);
+        background-color: var(--theme-blue);
       }
     }
   }

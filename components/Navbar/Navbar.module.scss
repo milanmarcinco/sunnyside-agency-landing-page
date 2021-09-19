@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: var(--light-blue);
+  background-color: var(--theme-blue);
 }
 
 .navbar {
@@ -66,7 +66,7 @@
       font-family: "Fraunces";
       font-size: 14px;
       font-weight: 700;
-      color: var(--desaturated-blue);
+      color: var(--almost-black);
 
       transition: all 100ms ease;
 
@@ -81,7 +81,7 @@
         text-decoration: none;
         color: var(--white);
 
-        background-color: var(--hover-blue);
+        background-color: var(--theme-blue-light);
       }
     }
   }
@@ -120,14 +120,14 @@
     }
 
     a {
-      color: var(--dark-grayish-blue);
+      color: var(--gray-dark);
 
       &::after {
-        background-color: var(--dark-grayish-blue);
+        background-color: var(--gray-dark);
       }
 
       &.btnLink {
-        background-color: var(--yellow);
+        background-color: var(--theme-yellow);
       }
     }
   }
