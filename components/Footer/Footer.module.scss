@@ -5,7 +5,7 @@
 .container {
   width: 100%;
   max-width: var(--max-content-width);
-  padding: 60px 30px;
+  padding: 60px 30px 20px;
   margin: 0 auto;
 
   display: flex;
@@ -51,6 +51,25 @@
       svg {
         transform: scale(1.2);
       }
+    }
+  }
+}
+
+.disclaimer {
+  margin-top: 40px;
+
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--theme-cyan-darker);
+
+  a {
+    text-decoration: underline;
+
+    transition: 100ms all ease;
+
+    &:hover {
+      color: var(--theme-cyan-dark);
     }
   }
 }

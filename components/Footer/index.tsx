@@ -50,6 +50,16 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <p className={styles.disclaimer}>
+            Challenge by{" "}
+            <a href="https://www.frontendmentor.io" target="_blank">
+              frontendmentor.io
+            </a>
+            , coded by{" "}
+            <a href="https://github.com/milanmarcinco" target="_blank">
+              Milan Marcinco
+            </a>
+          </p>
         </div>
       </div>
     </footer>
