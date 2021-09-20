@@ -1,13 +1,3 @@
-import ImageTransformDesktop from "../../assets/image-transform-desktop.jpg";
-import ImageTransformMobile from "../../assets/image-transform-mobile.jpg";
-import ImageStandOutDesktop from "../../assets/image-stand-out-desktop.jpg";
-import ImageStandOutMobile from "../../assets/image-stand-out-mobile.jpg";
-
-import ImageGraphicDesignDesktop from "../../assets/image-graphic-design-desktop.jpg";
-import ImagePhotographyDesktop from "../../assets/image-photography-desktop.jpg";
-
-import Image from "next/image";
-
 import cx from "classnames";
 import styles from "./CTAClaimsSection.module.scss";
 
@@ -30,19 +20,19 @@ const CTAClaimsSection = () => {
 
           {/* Desktop image */}
           <div className={cx(styles.desktop, styles.fs0)}>
-            <Image src={ImageTransformDesktop} layout="responsive" />
+            <img src={"/assets/image-transform-desktop.jpg"} />
           </div>
 
           {/* Mobile image */}
           <div className={cx(styles.mobile, styles.fs0)}>
-            <Image src={ImageTransformMobile} layout="responsive" />
+            <img src={"/assets/image-transform-mobile.jpg"} />
           </div>
         </div>
 
         <div className={styles.container}>
           {/* Desktop image */}
           <div className={cx(styles.desktop, styles.fs0)}>
-            <Image src={ImageStandOutDesktop} layout="responsive" />
+            <img src={"/assets/image-stand-out-desktop.jpg"} />
           </div>
 
           <div className={styles.content}>
@@ -59,7 +49,7 @@ const CTAClaimsSection = () => {
 
           {/* Mobile image */}
           <div className={cx(styles.mobile, styles.fs0)}>
-            <Image src={ImageStandOutMobile} layout="responsive" />
+            <img src={"/assets/image-stand-out-mobile.jpg"} />
           </div>
         </div>
 
@@ -78,19 +68,19 @@ const CTAClaimsSection = () => {
 
           {/* Desktop image */}
           <div className={cx(styles.desktop, styles.fs0)}>
-            <Image src={ImageGraphicDesignDesktop} layout="responsive" />
+            <img src={"/assets/image-graphic-design-desktop.jpg"} />
           </div>
 
           {/* Mobile image */}
           <div className={cx(styles.mobile, styles.fs0)}>
-            <Image src={ImageGraphicDesignDesktop} layout="responsive" />
+            <img src={"/assets/image-graphic-design-desktop.jpg"} />
           </div>
         </div>
 
         <div className={styles.container}>
           {/* Desktop image */}
           <div className={cx(styles.desktop, styles.fs0)}>
-            <Image src={ImagePhotographyDesktop} layout="responsive" />
+            <img src={"/assets/image-photography-desktop.jpg"} />
           </div>
 
           <div className={styles.content}>
@@ -106,7 +96,7 @@ const CTAClaimsSection = () => {
 
           {/* Mobile image */}
           <div className={cx(styles.mobile, styles.fs0)}>
-            <Image src={ImagePhotographyDesktop} layout="responsive" />
+            <img src={"/assets/image-photography-desktop.jpg"} />
           </div>
         </div>
       </div>

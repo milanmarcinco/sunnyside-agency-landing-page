@@ -19,7 +19,7 @@
 
   background-position: center bottom;
   background-size: cover;
-  background-image: url("../../assets/image-header-desktop.jpg");
+  background-image: url("/assets/image-header-desktop.jpg");
 }
 
 .heading {
@@ -39,7 +39,7 @@
 @media (max-width: 768px) {
   .container {
     padding: 60px 30px 150px;
-    background-image: url("../../assets/image-header-mobile.jpg");
+    background-image: url("/assets/image-header-mobile.jpg");
   }
 
   .heading {

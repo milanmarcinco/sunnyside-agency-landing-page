@@ -8,7 +8,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
+  .imgContainer {
+    overflow: hidden;
+  }
+
   img {
+    transform: scale(1);
     transition: 1s all ease;
 
     &:hover {

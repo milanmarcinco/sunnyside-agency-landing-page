@@ -1,15 +1,3 @@
-import Image from "next/image";
-
-import ConeImageDesktop from "../../assets/image-gallery-cone-desktop.jpg";
-import MilkBottlesImageDesktop from "../../assets/image-gallery-milkbottles-desktop.jpg";
-import OrangeImageDesktop from "../../assets/image-gallery-orange-desktop.jpg";
-import SugarCubesImageDesktop from "../../assets/image-gallery-sugar-cubes-desktop.jpg";
-
-import ConeImageMobile from "../../assets/image-gallery-cone-mobile.jpg";
-import MilkBottlesImageMobile from "../../assets/image-gallery-milkbottles-mobile.jpg";
-import OrangeImageMobile from "../../assets/image-gallery-orange-mobile.jpg";
-import SugarCubesImageMobile from "../../assets/image-gallery-sugar-cubes-mobile.jpg";
-
 import styles from "./ShowcaseSection.module.scss";
 
 const ShowcaseSection = () => {
@@ -17,16 +5,24 @@ const ShowcaseSection = () => {
     <section>
       <div className={styles.wrapper}>
         <div className={styles.desktopContainer}>
-          <Image src={ConeImageDesktop} layout="responsive" />
-          <Image src={MilkBottlesImageDesktop} layout="responsive" />
-          <Image src={OrangeImageDesktop} layout="responsive" />
-          <Image src={SugarCubesImageDesktop} layout="responsive" />
+          <div className={styles.imgContainer}>
+            <img src={"/assets/image-gallery-cone-desktop.jpg"} />
+          </div>
+          <div className={styles.imgContainer}>
+            <img src={"/assets/image-gallery-milkbottles-desktop.jpg"} />
+          </div>
+          <div className={styles.imgContainer}>
+            <img src={"/assets/image-gallery-orange-desktop.jpg"} />
+          </div>
+          <div className={styles.imgContainer}>
+            <img src={"/assets/image-gallery-sugar-cubes-desktop.jpg"} />
+          </div>
         </div>
         <div className={styles.mobileContainer}>
-          <Image src={ConeImageMobile} layout="responsive" />
-          <Image src={MilkBottlesImageMobile} layout="responsive" />
-          <Image src={OrangeImageMobile} layout="responsive" />
-          <Image src={SugarCubesImageMobile} layout="responsive" />
+          <img src={"/assets/image-gallery-cone-mobile.jpg"} />
+          <img src={"/assets/image-gallery-milkbottles-mobile.jpg"} />
+          <img src={"/assets/image-gallery-orange-mobile.jpg"} />
+          <img src={"/assets/image-gallery-sugar-cubes-mobile.jpg"} />
         </div>
       </div>
     </section>

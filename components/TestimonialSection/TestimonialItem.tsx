@@ -1,18 +1,16 @@
-import Image from "next/image";
-
 import styles from "./TestimonialSection.module.scss";
 
 interface IProps {
-  picture: StaticImageData;
+  picturePath: string;
   body: string;
   name: string;
   position: string;
 }
 
-const TestimonialItem = ({ picture, body, name, position }: IProps) => {
+const TestimonialItem = ({ picturePath, body, name, position }: IProps) => {
   return (
     <div className={styles.testimonialItem}>
-      <Image className={styles.picture} src={picture} width="60" height="60" />
+      <img className={styles.picture} src={picturePath} />
       <p className={styles.body}>{body}</p>
       <p className={styles.name}>{name}</p>
       <p className={styles.position}>{position}</p>
