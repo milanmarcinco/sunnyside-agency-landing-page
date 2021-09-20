@@ -1,6 +1,10 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/460d229b-a110-4a28-a48b-cb3b1e18b61a/deploy-status)](https://app.netlify.com/sites/marcinco-sunnyside-agency/deploys)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 # Sunnyside Agency | Landing Page
+
+Live at [marcinco-sunnyside-agency.netlify.app](https://marcinco-sunnyside-agency.netlify.app/)
 
 > Simple, static, fully reponsive landing page built with React, NextJS and SCSS modules.
 
